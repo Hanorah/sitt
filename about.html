@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norah's Brand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="WhatsApp_Image_2024-05-08_at_13.20.33_d3f820b3-removebg-preview.png"
+                alt="">
+        </a>
+
+        <ul class="navbarr">
+            <li>
+                <a href="index.html" class="dropdown-toggle">Home <i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                    <div class="dropdown-content">
+                        <div class="left-side">
+                            <!-- Lottie animation cont -->
+                            <div id="lottie-animation">
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <dotlottie-player
+                                    src="https://lottie.host/b89b2919-f102-4a05-b8db-29538eb41bc5/X9Hs5AhSUL.json"
+                                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                    autoplay></dotlottie-player>
+
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="light-green-card">
+                                <h4>Unlock Your Child's Potential</h4>
+                                <p style="color: white;">Empower your child with essential skills in web development,
+                                    content creation, and more!</p>
+                            </div>
+                            <div class="light-purple-card">
+                                <h4>Real-World Learning</h4>
+                                <p style="color: white;">Our program offers hands-on experience with industry experts to
+                                    help your child thrive.</p>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle">S.I.T &nbsp;<i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                    <div class="dropdown-content">
+                        <div class="left-side">
+                            <div class="light-green-card">
+                                <h4>Exclusive Opportunities</h4>
+                                <p style="color: white;">Participants gain access to internships and mentoring to
+                                    kickstart their careers.</p>
+                            </div>
+                            <div class="light-green-card" style="background-color: #3b5998;">
+                                <h4>Join the Future</h4>
+                                <p style="color: white;">Equip your child with skills that are not just relevant today,
+                                    but also for tomorrow's jobs.</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <!-- Lottie animation cont -->
+                            <div id="lottie-animation">
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <dotlottie-player
+                                    src="https://lottie.host/2444a090-c0d9-4265-858f-6842cc64f2c0/FQ4i4eOjil.json"
+                                    background="transparent" speed="1" style="width: 300px; height: 250px;" loop
+                                    autoplay></dotlottie-player>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="mainn">
+            <a href="tofnation@gmail.com"><i class="fas fa-envelope" id="contact-icon"
+                    style="margin-right: 1em; font-size: 1em;"></i></a>
+            <a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/" class="behance"><i class="fab fa-facebook"></i></a>
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+    </header>
+
+
+    <style>
+        .hero {
+            width: 100%;
+            height: 40vh;
+            /* 40% of the viewport height */
+            background-image: url('community.png');
+            /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.692);
+
+            z-index: 2;
+        }
+
+        .hero-text {
+            font-size: 3em;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 3em !important;
+        }
+
+        .sub-text {
+            position: absolute;
+
+            font-size: 1.5em;
+            color: white;
+            font-style: italic;
+            text-align: center;
+            width: 100%;
+            font-family: 'Cursive', sans-serif;
+            /* Creative feel */
+        }
+
+        .achievements {
+            padding: 2em;
+            text-align: center;
+        }
+
+
+
+        .intro-text p {
+            font-size: 1em;
+            font-style: italic;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card__container {
+            display: grid;
+
+            gap: 1.5em;
+            margin-top: 2em;
+
+
+
+        }
+
+        .card__glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 3em;
+            margin-bottom: 2em;
+            text-align: left;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .card__glass:hover {
+            transform: translateY(-10px);
+        }
+
+        .card__title {
+            font-size: 1.5em;
+            color: white;
+        }
+
+        .card__description {
+            margin-top: 0.5em;
+            font-size: 1.1em;
+            color: #ffffff;
+        }
+    </style>
+
+    <body>
+
+        <div class="hero">
+            <div class="overlay">
+                <div class="hero-text" style="margin-top: 2em;">About</div>
+            </div>
+        </div>
+
+
+        <section class="achievements">
+            <!-- Centered introductory text -->
+            <div class="intro-text">
+                <section class="achievements">
+
+                    <div class="highlighted-text-shadow">
+                        SKILLS INCOME AND TECHNOLOGY <br>EMPOWERING THE
+                        NEXT GENERATION
+                    </div>
+                    <style>
+                        .highlighted-text-shadow {
+                            font-size: 3em;
+                            letter-spacing: -.15ch;
+                            line-height: 1em;
+                        }
+                    </style>
+                </section>
+
+            </div>
+
+            <!-- Glass card container -->
+            <div class="card__container bd-container">
+                <div class="card__glass" style="background-color: rgb(4, 69, 138);">
+                    <h3 class="card__title">What is SIT?</h3>
+                    <p class="card__description">
+                        The Skills, Income, and
+                        Technology (SIT)
+                        program is a
+                        4-week immersive course designed for youths
+                        aged 13-19 to develop essential skills in creativity, technology, and career-building. Your
+                        child
+                        will learn from industry experts, gain hands-on experience, and showcase their achievements in a
+                        final exhibition.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: orangered;">
+                <div class="card__data">
+                    <h3 class="card__title">Why Should Your Child Register?</h3>
+                    <p class="card__description">The SIT program offers more than just education; it's a transformative
+                        experience that prepares your child for the future. By joining, they will:
+                        <br> - Develop practical skills in high-demand fields like web development, content creation,
+                        and digital media.
+                        <br> - Learn directly from industry experts, receiving personalized mentorship.
+                        <br> - Build confidence through real-world projects.
+                        <br> - Connect with peers and mentors, forming valuable networks for their future career.
+                        <br> With technology driving tomorrow, the skills your child gains today will set them apart.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: green;">
+                <div class="card__data">
+                    <h3 class="card__title">Why Is This a Once in a Lifetime Opportunity?</h3>
+                    <p class="card__description">SIT offers:
+                        <br> - <strong>Expert Training:</strong> Led by industry professionals.
+                        <br> - <strong>Hands-On Projects:</strong> Real-world experience with tangible outcomes.
+                        <br> - <strong>Exclusive Access:</strong> Limited spots for personalized mentorship.
+                        <br> - <strong>Lasting Impact:</strong> Skills and connections that shape their future.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: brown;">
+                <div class="card__data">
+                    <h3 class="card__title">What Sets SIT Apart from Other Programs?</h3>
+                    <p class="card__description">SIT stands out by offering:
+                        <br> - <strong>Industry-Led Training:</strong> Learn directly from professionals in top fields.
+                        <br> - <strong>Real-World Projects:</strong> Practical skills applied through hands-on work.
+                        <br> - <strong>Exclusive Opportunities:</strong> Limited spots, personalized guidance, and
+                        mentorship.
+                        <br> - <strong>Career Focus:</strong> Skills that open doors to internships, mentorships, and
+                        future careers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: #0e76a8;">
+                <div class="card__data">
+                    <h3 class="card__title">How Does SIT Foster Creativity and Innovation?</h3>
+                    <p class="card__description">SIT encourages creativity through:
+                        <br> - <strong>Hands-On Projects:</strong> Engaging activities that stimulate original thinking.
+                        <br> - <strong>Collaborative Learning:</strong> Teamwork that inspires fresh ideas and diverse
+                        perspectives.
+                        <br> - <strong>Flexible Environment:</strong> A supportive space where students can experiment
+                        and explore.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: #e91e63;">
+                <div class="card__data">
+                    <h3 class="card__title">Can SIT Help My Child Discover Their Passion?</h3>
+                    <p class="card__description">Absolutely! SIT aids in discovering passions by:
+                        <br> - <strong>Diverse Curriculum:</strong> Exposure to various fields like web development,
+                        graphic design, and media.
+                        <br> - <strong>Expert Guidance:</strong> Mentorship from professionals who can provide insights
+                        and encouragement.
+                        <br> - <strong>Hands-On Experience:</strong> Real-world projects allow children to explore and
+                        identify their interests.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: #25D366;">
+                <div class="card__data">
+                    <h3 class="card__title">What Kind of Support Does SIT Offer to Students?</h3>
+                    <p class="card__description">SIT provides comprehensive support including:
+                        <br> - <strong>Personalized Mentorship:</strong> One-on-one sessions with industry experts for
+                        tailored guidance.
+                        <br> - <strong>Progress Tracking:</strong> Regular updates to monitor development and ensure
+                        growth.
+                        <br> - <strong>Post-Program Access:</strong> Lifelong access to resources and community for
+                        continued learning.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: #531c7e;">
+                <div class="card__data">
+                    <h3 class="card__title">Unlocking Your Child's Potential with SIT</h3>
+                    <p class="card__description">SIT empowers your child to reach their full potential through:
+                        <br> - <strong>Skill Development:</strong> Gain essential skills in technology, creativity, and
+                        teamwork.
+                        <br> - <strong>Confidence Building:</strong> Hands-on experiences that enhance self-esteem and
+                        capability.
+                        <br> - <strong>Networking Opportunities:</strong> Connections with peers and mentors that can
+                        open doors for the future.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: #cbb700;">
+                <div class="card__data">
+                    <h3 class="card__title">Why SIT is Essential for Future Success</h3>
+                    <p class="card__description">SIT is crucial for future success because:
+                        <br> - <strong>Market-Relevant Skills:</strong> Equip your child with skills that are in high
+                        demand in today’s job market.
+                        <br> - <strong>Real-World Experience:</strong> Practical projects provide a competitive edge and
+                        resume-worthy experience.
+                        <br> - <strong>Future-Ready Mindset:</strong> Cultivates adaptability and problem-solving skills
+                        essential for any career.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: #2e7906;">
+                <div class="card__data">
+                    <h3 class="card__title">How to Register for SIT</h3>
+                    <p class="card__description">Registering for SIT is easy! Simply:
+                        <br> 1. Visit our website and navigate to the registration page.
+                        <br> 2. Fill out the online application form with your child's details.
+                        <br> 3. Submit the form and await confirmation via email.
+                        <br> Don't miss this chance to unlock your child's potential!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: #180ea8;">
+                <div class="card__data">
+                    <h3 class="card__title">What Are the Requirements for SIT Admission?</h3>
+                    <p class="card__description">To qualify for SIT, applicants must:
+                        <br> - Be aged 13-19 years.
+                        <br> - Have a keen interest in technology, creativity, and innovation.
+                        <br> - Submit a brief statement explaining their motivation for joining the program.
+                        <br> These requirements ensure a vibrant and motivated group of participants.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: #25D366;">
+                <div class="card__data">
+                    <h3 class="card__title">SIT Program Schedule and Timeline</h3>
+                    <p class="card__description">The SIT program runs over four Saturdays, from 10 AM to 5 PM. Key dates
+                        include:
+                        <br> - <strong>Session 1:</strong> [Date]
+                        <br> - <strong>Session 2:</strong> [Date]
+                        <br> - <strong>Session 3:</strong> [Date]
+                        <br> - <strong>Session 4:</strong> [Date]
+                        <br> Each session features interactive workshops, guest lectures, and collaborative projects.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__glass" style="background-color: #531c7e;">
+                <div class="card__data">
+                    <h3 class="card__title">How Much Does SIT Cost?</h3>
+                    <p class="card__description">The total cost of the SIT program is 100,000 NGN, which includes:
+                        <br> - Access to all workshops and materials.
+                        <br> - A workbook and program merchandise (T-shirt).
+                        <br> - Lunch during the sessions.
+                        <br> - A certificate of completion at the end of the program.
+                        <br> Investing in SIT is investing in your child's future!
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <section class="team-section">
+            <h1 class="team-title" style="color: black; font-size: 3em; font-weight: 800;">Our Team</h1>
+            <div class="team-container">
+                <div class="team-member">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="IMG-20240604-WA0100.jpg" alt="Tejiri Jerry Chunu" class="team-image">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="member-card-content">
+                                    <h3 class="member-name">Tejiri Jerry Chunu</h3>
+                                    <p class="member-position">FOUNDER, S.I.T</p>
+                                    <div class="inst">
+                                        <a href="https://instagram.com/yourprofile" class="social-icon instagram"
+                                            target="_blank">
+                                            <img src="instagram-removebg-preview.png" alt="Instagram" />
+                                        </a>
+                                        <a href="https://twitter.com/yourprofile" class="social-icon twitter"
+                                            target="_blank">
+                                            <img src="twitter-removebg-preview.png" alt="Twitter" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="IMG-20240604-WA0103.jpg" alt="Ms Norah" class="team-image">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="member-card-content">
+                                    <h3 class="member-name">Ms Norah</h3>
+                                    <p class="member-position">WEB DEVELOPER, DOTBOB INC</p>
+                                    <div class="inst">
+                                        <a href="https://instagram.com/yourprofile" class="social-icon instagram"
+                                            target="_blank">
+                                            <img src="instagram-removebg-preview.png" alt="Instagram" />
+                                        </a>
+                                        <a href="https://twitter.com/yourprofile" class="social-icon twitter"
+                                            target="_blank">
+                                            <img src="twitter-removebg-preview.png" alt="Twitter" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="IMG-20240604-WA0102.jpg" alt="Daniel Chinenye" class="team-image">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="member-card-content">
+                                    <h3 class="member-name">Victor Akintade</h3>
+                                    <p class="member-position">VIDEOGRAPHER</p>
+
+                                    <div class="inst">
+                                        <a href="https://instagram.com/yourprofile" class="social-icon instagram"
+                                            target="_blank">
+                                            <img src="instagram-removebg-preview.png" alt="Instagram" />
+                                        </a>
+                                        <a href="https://twitter.com/yourprofile" class="social-icon twitter"
+                                            target="_blank">
+                                            <img src="twitter-removebg-preview.png" alt="Twitter" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="IMG-20240604-WA0101.jpg" alt="Lucas Ewaen Idubor" class="team-image">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="member-card-content">
+                                    <h3 class="member-name">Idehen Fredrick Etinosa</h3>
+                                    <p class="member-position">PHOTO EDITOR</p>
+
+                                    <div class="inst">
+                                        <a href="https://instagram.com/yourprofile" class="social-icon instagram"
+                                            target="_blank">
+                                            <img src="instagram-removebg-preview.png" alt="Instagram" />
+                                        </a>
+                                        <a href="https://twitter.com/yourprofile" class="social-icon twitter"
+                                            target="_blank">
+                                            <img src="twitter-removebg-preview.png" alt="Twitter" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="IMG-20240604-WA0104.jpg" alt="Idehen Fredrick Etinosa" class="team-image">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="member-card-content">
+
+                                    <h3 class="member-name">Daniel Chinenye</h3>
+                                    <p class="member-position">CREATIVE DESIGNER</p>
+
+                                    <div class="inst">
+                                        <a href="https://instagram.com/yourprofile" class="social-icon instagram"
+                                            target="_blank">
+                                            <img src="instagram-removebg-preview.png" alt="Instagram" />
+                                        </a>
+                                        <a href="https://twitter.com/yourprofile" class="social-icon twitter"
+                                            target="_blank">
+                                            <img src="twitter-removebg-preview.png" alt="Twitter" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="IMG-20240604-WA0105.jpg" alt="Victor Akintade" class="team-image">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="member-card-content">
+                                    <h3 class="member-name">Lucas Ewaen Idubor</h3>
+                                    <p class="member-position">CRYPTO & FOREX TRADER</p>
+                                    <div class="inst">
+                                        <a href="https://instagram.com/yourprofile" class="social-icon instagram"
+                                            target="_blank">
+                                            <img src="instagram-removebg-preview.png" alt="Instagram" />
+                                        </a>
+                                        <a href="https://twitter.com/yourprofile" class="social-icon twitter"
+                                            target="_blank">
+                                            <img src="twitter-removebg-preview.png" alt="Twitter" />
+                                        </a>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            html {
+                background-color: white;
+            }
+
+            .team-section {
+                padding: 40px;
+
+                text-align: center;
+
+            }
+
+            .team-title {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            .team-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .team-member {
+                perspective: 1000px;
+                width: 220px;
+                height: 250px;
+            }
+
+            .flip-card {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+
+                backdrop-filter: blur(10px);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+            }
+
+            .flip-card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+            }
+
+            .team-member:hover .flip-card-inner {
+                transform: rotateY(180deg);
+            }
+
+            .flip-card-front,
+            .flip-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 15px;
+            }
+
+            .flip-card-front {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .team-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
+            .flip-card-back {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                transform: rotateY(180deg);
+            }
+
+            .member-name {
+                margin: 0;
+                font-size: 1.2em;
+            }
+
+            .member-position {
+                font-size: 0.9em;
+                font-style: italic;
+                color: #000;
+            }
+
+            .inst {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .social-icon {
+                margin: 0 5px;
+                transition: opacity 0.3s;
+                /* Smooth transition for hover effect */
+                z-index: 10;
+            }
+
+            .social-icon img {
+                width: 30px;
+                /* Adjust size as needed */
+                height: auto;
+                /* Maintain aspect ratio */
+            }
+
+            .social-icon:hover {
+                opacity: 0.8;
+                /* Change opacity on hover for a subtle effect */
+            }
+
+
+
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .team-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .team-member {
+                    width: 90%;
+                }
+            }
+        </style>
+
+        <footer class="footer-section">
+            <div class="footer-column">
+                <h3>Program Overview</h3>
+                <ul>
+                    <li>Content Creation & Creativity</li>
+                    <li>Web Development</li>
+                    <li>Photography & Editing</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Key Topics</h3>
+                <ul>
+                    <li>Video Editing & Crypto</li>
+                    <li>Blockchain</li>
+                    <li>Graphic Design</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Additional Info</h3>
+                <ul>
+                    <li>Internships & Mentorships</li>
+                    <li>Prizes for Top Performers</li>
+                    <li>Certificates of Completion</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li>Intentional Parenting Conference</li>
+                    <li>SIT Program Launch</li>
+                    <li>Partner Outreach</li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TOF Nation</p>
+                <p><a href="#">Privacy Policy</a></p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" style="--bg-color: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" style="--bg-color: #00acee;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" style="--bg-color: #25D366;"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon" style="--bg-color: #0e76a8;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
